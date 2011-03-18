@@ -69,7 +69,7 @@ var app = http.createServer(function(request, response) {
 
 });
 
-var socket = io.listen(app, {transports:['websocket', 'xhr-polling']}),
+var socket = io.listen(app, {transports:['websocket', 'flashsocket', 'xhr-polling']}),
   buffer = [],
   MAXBUF = 1024,
   json = JSON.stringify;
